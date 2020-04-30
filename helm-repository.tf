@@ -18,4 +18,15 @@ data "helm_repository" "istio-repository" {
 data "helm_repository" "bitnami-repository" {
   name = "bitnami-repository"
   url  = "https://charts.bitnami.com/bitnami"
+  
+}
+
+data "helm_repository" "stable" {
+  name = "stable"
+  url  = "https://kubernetes-charts.storage.googleapis.com"
+}
+
+data "helm_repository" "incubator" {
+  name = "incubator"
+  url  = "http://storage.googleapis.com/kubernetes-charts-incubator"
 }
